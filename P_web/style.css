@@ -1,0 +1,119 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+text-align: center;
+padding: 10px 0  20px;
+background-color: #f0f0f0;
+
+}
+
+
+.navbar{
+top: 0;
+left: 0;
+width: 100%;
+padding: 20px 100px;
+background-color: transparent;
+display: flex;
+justify-content: right;
+align-items: center;
+z-index: 100;
+
+
+}
+
+
+.navbar a{
+position: relative;
+font-size: 16px;
+color: #0a176d;
+font-weight: bold;
+text-decoration: solid;
+margin-left: 40px;
+}
+
+.navbar a::before{
+content:'';
+position: absolute;
+top: 100%;
+left: 0;
+width: 0;
+height: 3px;
+background-color: rgb(133, 135, 136);
+transition: .3s;
+}
+
+.navbar a:hover::before{
+width: 100%;
+}
+
+.titlepage{
+
+position: absolute;
+top: 200px;
+left: 50%;
+transform: translateX(-50%);
+z-index: 1;
+color: white;
+
+}
+.titlepage h1{
+font-size: 25px;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.titlepage p{
+font-size: 25px;
+
+}
+
+.cover{
+max-height: 400px;
+width: 100%;
+height: 100%;
+object-fit: cover;
+object-position: center;
+}
+
+.Servicios{
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(400px,1fr));
+grid: gap 20px;
+padding: 50px;
+}
+
+.tarjeta{
+text-align: center;
+padding: 20px;
+background-color: #f9f9f9;
+border-radius: 10px;
+box-shadow:0 0 10px rgb(0, 0,0,0.1);
+}
+
+.tarjeta img{
+width: 350px;
+height: 350px;
+border-radius: 15px;
+}
+.seccionboton{
+text-align: center;
+background-color: #aaaaaa;
+color: #fff;
+padding: 30px 20px;
+
+}
+
+.inicio{
+
+    color: #000;
+
+
+}
+
+
+
